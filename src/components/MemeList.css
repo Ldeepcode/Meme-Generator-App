@@ -1,0 +1,40 @@
+/* src/components/MemeList.css */
+.meme-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(373px, 1fr)
+  ); /* Increased size */
+  gap: 16px;
+  padding: 16px;
+}
+
+.meme-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.edit-button {
+  margin-top: 8px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}

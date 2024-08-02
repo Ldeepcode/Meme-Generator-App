@@ -1,0 +1,64 @@
+/* src/components/EditMeme.css */
+.meme-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.meme-image {
+  max-width: 36%; /* Reduced from 60% to 36% */
+  height: auto;
+}
+
+.draggable-text {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: move;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls input {
+  padding: 8px;
+  margin-bottom: 8px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.add-text-button,
+.save-meme-button {
+  padding: 12px 24px;
+  margin: 4px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-text-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.add-text-button:hover {
+  background-color: #0056b3;
+}
+
+.save-meme-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-meme-button:hover {
+  background-color: #218838;
+}
